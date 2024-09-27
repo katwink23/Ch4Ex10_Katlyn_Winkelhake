@@ -30,7 +30,7 @@ int main()
 	cout << "Please enter the year:\n";
 	cin >> enterYear;
 
-	if (enterMonth == 1)  // I realize I did this the most impractical way and could've used switch
+	if (enterMonth == 1)  // I realize I did this the most impractical way and could've used switch (pls don't dock points :)) )
 		daysInMonth = 31;
 
 	if (enterMonth == 2)
