@@ -24,7 +24,7 @@ int main()
 	int daysInMonth;
 	int leapYear;
 
-	cout << "Please enter the month (numerical):\n";
+	cout << "Please enter the month (1-12):\n";
 	cin >> enterMonth;
 
 	cout << "Please enter the year:\n";
