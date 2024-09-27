@@ -19,7 +19,8 @@ using namespace std;
 int main()
 {
 
-
+	double month;
+	double daysInMonth;
 
 
 
