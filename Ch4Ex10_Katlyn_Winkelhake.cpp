@@ -19,17 +19,62 @@ using namespace std;
 int main()
 {
 
-	double month;
-	double daysInMonth;
+	int enterMonth;
+	int enterYear;
+	int daysInMonth;
+	int leapYear;
 
+	cout << "Please enter the month (numerical):\n";
+	cin >> enterMonth;
 
+	cout << "Please enter the year:\n";
+	cin >> enterYear;
 
+	if (enterMonth == 1) 
+		daysInMonth = 31;
 
+	if (enterMonth == 2)
+		if (enterYear % 100 == 0 && enterYear % 400 == 0)
+			daysInMonth = 29;
 
+		else if (enterYear % 100 != 0 && enterYear % 4 == 0)
+			daysInMonth = 29;
 
+		else
+			daysInMonth = 28;
+	
+	if (enterMonth == 3)
+		daysInMonth = 31;
 
+	if (enterMonth == 4)
+		daysInMonth = 30;
 
+	if (enterMonth == 5)
+		daysInMonth = 31;
 
+	if (enterMonth == 6)
+		daysInMonth = 30;
 
+	if (enterMonth == 7)
+		daysInMonth = 31;
+
+	if (enterMonth == 8)
+		daysInMonth = 31;
+
+	if (enterMonth == 9)
+		daysInMonth = 30;
+
+	if (enterMonth == 10)
+		daysInMonth = 31;
+
+	if (enterMonth == 11)
+		daysInMonth = 30;
+
+	if (enterMonth == 12)
+		daysInMonth = 31;
+
+	cout << endl;
+	cout << daysInMonth << " days.\n";
+	
 	return 0;
 }
